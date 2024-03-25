@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Someone's Photography Portfolio</title>
+	<meta name="author" content="Someone" />
+	<meta name="description" content="A bunch of photos I took" />
+	<style>
+		body {
+			height: 100vh;
+			text-transform: uppercase;
+		}
+
+		/*also same as using nav */
+		.container {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: center;
+			height:10vh;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		h1 {
+			align-self:flex-end;
+			padding-top: 50px;
+		}
+
+		main {
+			display:flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			padding:5rem;
+			height: 80vh;
+			
+		}
+
+		figure {
+			flex-grow: 1;
+			flex-shrink: 0;
+			flex-basis:30%;
+		}
+		figure:nth-child(2) {
+			align-self: center;
+		}
+
+		/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+		
+
+		/* to constrain size of an image to its controller */
+		img {
+			width:100%
+		}
+
+		figcaption {
+			display: flex;
+		}
+	</style>
+  </head>
+  <body>
+	<nav>
+		<div class="container">
+			<div>
+				<a href="./about.html">About</a>
+			</div>
+			<div>
+				<a href="./portfolio.html">Portfolio</a>
+			</div>
+			<div>
+				<h1>Arman Elahi</h1>
+			</div>
+			<div>
+				<a href="./work.html">Hire Me</a>
+			</div>
+			<div>
+				<a href="./contact.html">Contact.html</a>
+			</div>
+  			
+  			
+		</div>
+	</nav>
+	<main>
+  	<figure>
+    	<img
+      	src="https://images.unsplash.com/photo-1442458017215-285b83f65851?fit=crop&w=1035&q=100"
+    	/>
+    	<figcaption>
+      	<span>Marigolds</span>
+      	<time>10/6/2022</time>
+    	</figcaption>
+  	</figure>
+	  <label class="switch">
+		<input type="checkbox">
+		<span class="slider round"></span>
+	  </label>
+  	<figure>
+		
+    	<img
+      	src="https://images.unsplash.com/photo-1465479499730-d2c36f03ef87?auto=format&fit=crop&w=1054&q=80"
+    	/>
+    	<figcaption>
+      	<span>Metro</span>
+      	<time>9/13/2022</time>
+    	</figcaption>
+  	</figure>
+  	<figure>
+    	<img
+      	src="https://images.unsplash.com/photo-1523730205978-59fd1b2965e3?auto=format&fit=crop&w=1054&q=80"
+    	/>
+    	<figcaption>
+      	<span>Antelope Canyon </span>
+      	<time>4/14/2022</time>
+    	</figcaption>
+  	</figure>
+	</main>
+  </body>
+</html>
+
+

@@ -1,0 +1,332 @@
+nav#sidebar {
+    width: 15vw;
+    height: 110vh;
+
+    background-color: black;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    padding: 0;
+    margin:0;
+}
+
+div.left.top {
+    width:15vw;
+    height:7vh;
+
+    background-color: black;
+    
+}
+
+div.left.top img {
+    padding-top: 5px;
+    max-width: 70%;
+    margin:0.5rem;
+}
+
+div.left.upper {
+    width:15vw;
+    height:43vh;
+    background-color: black;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 1rem;
+
+}
+
+div.left.upper div { /* section that holds a left tab image and label i.e. image home */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+    
+}
+
+div.left.upper div img { /*sets size for left tab images and inverts them */
+    width: 40px;
+    height:40px;
+    filter: invert(100%);
+    margin-left: 1rem;
+    
+}
+
+div.left.upper div:last-of-type img { /*causes the last image 'liked songs' to not be inverted */
+   filter:none !important;
+}
+
+div.left.upper div a { /*affects labels in the left hand column i.e. Search */
+    color:white;
+    /* font-weight: bold;*/
+    padding-left: 0vw;
+    margin:0.5rem;
+}
+
+div.left.upper div a:not(:hover) {
+    text-decoration: none;
+ }
+
+div.left.lower {
+    width:15vw;
+    height:38vh;
+    
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    flex-wrap: wrap;  
+
+}
+
+div.left.lower a {
+    margin:0.5rem;
+    font-size: 1rem;
+    padding-top: 0.2rem;
+    color: #ccc;
+
+    text-decoration: none;
+}
+
+div.left.bottom {
+
+    width:15vw;
+    height:12vh;
+    
+    background-color: black;
+    position:relative;
+}
+
+div.left.bottom button {
+    font-weight: bold;
+    color: white;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 1rem;
+
+    position: absolute;
+    top:2rem;
+    left:1rem;
+}
+
+main {
+    width:85vw;
+    height:100vh;
+    background-color: #ccc;
+
+    margin:0;
+    padding:0;
+    /*display: flex;   flex will mess with scrolling 
+    flex-direction: column;
+    */
+}
+main nav.topbar {
+    width: 85vw;
+    height:10 vh;
+    background-color:rgb(27, 24, 24);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    padding: 0;
+    margin:0 ;
+}
+
+main nav.topbar div:first-of-type {
+    width: 42.5vw;
+    height:10vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+main nav.topbar div button.round {
+    width:50px;
+    height:50px;
+
+    
+    background-color: black;
+    border-radius: 50%;
+    color:#ccc;
+    font-size: 1.5rem;
+    border:none;
+    margin:0.3rem;
+}
+
+main nav.topbar div:last-of-type {
+    width: 42.5vw;
+    height:10vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+main nav.topbar div button.none {
+    width:130px;
+    height:50px;
+
+    font-weight: bold;
+    background-color:rgb(27, 24, 24);
+    color:#ccc;
+    border:none;
+    font-size: 1.2rem;
+
+    
+    margin:0.7rem;
+}
+
+main nav.topbar div button.white {
+    width:130px;
+    height:50px;
+
+    font-weight: bold;
+    background-color:white;
+    color:black;
+    border:none;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+
+    
+    margin:0.7rem;
+}
+
+main.section {
+    /* width:85vw;
+    height:90vh;
+    */
+
+    padding:none;
+    margin:none;
+
+    background-image: linear-gradient(rgb(27, 26, 26),  rgb(21, 23, 23),  black);
+    background-color: rgb(42, 44, 44);
+
+    overflow:scroll; /*overflow:auto for rollover */
+}
+
+main.section div.heading {
+    width:85vw;
+    height:8vh;
+
+    padding:none;
+    margin:none;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main.section div.heading a.playlist.right {
+    color: #ccc;
+    padding:1.5rem;
+    font-size: 1rem;
+    
+}
+
+main.section div.heading a.playlist.right:not(:hover){
+    text-decoration: none;
+}
+
+main.section div.heading a.playlist.left {
+    color: white;
+    padding:1.5rem;
+    font-size: 2rem;
+}
+
+main.section div.heading a.playlist.left:not(:hover){
+    text-decoration: none;
+}
+
+
+main.section div.playlist {
+    width:85vw;
+    height: 40vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    
+    /* background-color: grey; */
+}
+
+main.section div.playlist div { /*each of the little individual playlists*/
+    width: 15vw;
+    height: 37vh;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    background-color: rgb(31, 30, 30);
+
+    margin:0.5rem;
+    padding:0;
+    border-radius: 0.5rem;
+    position:relative;
+}
+
+main.section div.playlist div:hover {
+    background-color: rgb(51, 50, 50);
+}
+
+main.section div.playlist div button.play {
+    display: none;
+}
+main.section div.playlist div:hover button.play {
+    display: block;
+    width:50px;
+    height:50px;
+    background-color: rgb(8, 223, 8);
+    border: none;
+    font-size: 1.4rem;
+    padding-left: 0.5rem;
+
+    position:absolute;
+    border-radius: 50%;
+    top:105px;
+    left:140px;
+}
+
+main.section div.playlist div img {
+    width: 150px;
+    height: 150px;
+    border-radius: 0.65rem;
+    align-self:center;
+
+    margin:0.5rem;
+}
+
+main.section div.playlist div p.first {
+    font-size: 1.2rem;
+    padding:0;
+    margin:0.5rem;
+    color:white;
+    font-weight: bold;
+}
+
+main.section div.playlist div p.second {
+    font-size: 1rem;
+    padding:0;
+    margin:0.5rem;
+    margin-bottom: 1rem;
+
+    color:#ccc;
+    
+}

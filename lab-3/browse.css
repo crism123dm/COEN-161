@@ -1,0 +1,39 @@
+/* 
+Why does a div wrap each dt and dd? They are wrapped because this allows us to make individual cards instead of one big chunk of text.
+*/
+
+dt{
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 25px;
+}
+
+dl{
+    padding: 5rem;
+    background-color: aquamarine;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+dd{
+    font-size: 17px;
+}
+
+dl > div{
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-color: bisque;
+    padding: 1em;
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    margin: 10px;
+    /*
+    grid-row-gap: 10%;
+    column-gap: 10px;*/
+}

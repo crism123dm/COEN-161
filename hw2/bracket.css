@@ -1,0 +1,158 @@
+h1 {
+    color: red;
+    text-align: center;
+}
+  
+main {
+    display: flex;
+    flex-direction: row;
+
+    width:100vw;
+    height:80vh;
+  }
+  
+div.column, div.column9 {
+    display:flex;
+    flex-direction: column;
+    width:15vh;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-left:0.5rem;
+    padding:0;
+
+}
+
+div.match {
+    border: 1px solid red;
+    width:150px;
+    height:100px;
+    border-radius: 0.1rem;
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    position:relative;
+}
+
+ul {
+    list-style-type: none;
+}
+
+div.match2 {
+    width:8vw;
+    height: 8vh;
+    border-right:1px solid black;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+
+}
+
+div.match8 {
+    width:8vw;
+    height: 8vh;
+    border-left:1px solid black;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+}
+
+div.match3 {
+    width:10vw;
+    height:20vh;
+    border-right:1px solid black;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    
+    margin:0;
+    
+}
+
+div.match7 {
+    width:10vw;
+    height:20vh;
+    border-left:1px solid black;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    
+    margin:0;
+    
+}
+
+div.match4 {
+    width:10vw;
+    height:40vh;
+    border-right:1px solid black;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+}
+
+div.match6 {
+    width:10vw;
+    height:40vh;
+    border-left:1px solid black;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+}
+
+div.line {
+    width:10vw;
+    height:10vh;
+    border-top:1px solid black;
+    align-self: center;
+    position: relative;
+    top:17rem;
+}
+
+.column2, .column3, .column4, .column6, .column7, .column8 {
+    width:10vw;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content: space-around;
+
+    padding: 0;
+}
+
+.column2 {
+    margin-left:1rem;
+}
+
+.match2 label.top {
+    color: grey;
+    font-size: 0.8rem;
+    position:relative;
+    left:0.5rem;
+    top:-1.3rem;
+}
+
+.match2 label.bottom {
+    color: grey;
+    font-size: 0.8rem;
+    position:relative;
+    left:-0.8rem;
+    top:3.5rem;
+}
+
+.match8 label.top {
+    color: grey;
+    font-size: 0.8rem;
+    position:relative;
+    left:6rem;
+    top:-1.3rem;
+}
+
+.match8 label.bottom {
+    color: grey;
+    font-size: 0.8rem;
+    position:relative;
+    left:4.8rem;
+    top:3.6rem;
+}
+
+main div.match label {
+    color: grey;
+    font-size: 0.8rem;
+    position:absolute;
+    left:-0.05rem;
+    top:-1rem;
+}

@@ -1,0 +1,102 @@
+main {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 80%;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    /*background-color: aliceblue; */
+}
+
+main > figure {
+    flex: 0 0 60%;
+  }
+  
+
+
+body {
+    --text-color: #7e4b38;
+    --background: #f7ead9;
+    --serif-fonts: "Quicksand", sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    padding: 2rem;
+    background-color: var(--background);
+    color: var(--text-color);
+    font-family: var(--serif-fonts);
+  }
+  
+
+h1 {
+    color:brown;
+    margin-left:2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+img {
+    width:80%;
+    height:auto
+}
+
+#info {
+    display: flex;
+  flex-flow: column;
+  max-height: 100%;
+  justify-content: center;
+
+    
+}
+
+p {
+    font-size:1rem;
+    line-height: 1.5rem;
+    padding:2rem;
+}
+
+p.large {
+    font-size:3rem;
+    font-family: var(--serif-fonts);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+form input {
+    padding: 1rem;
+    font-size: 1rem;
+    flex-grow: 1;
+    color: var(--text-color);
+    border: 1px solid #eee;
+    outline: none;
+  }
+  
+  form input:active,form input:focus {
+    border-color: var(--text-color);
+  }
+  
+  form button {
+    padding: 1rem;
+    font-size: 1rem;
+    flex: 0 0 auto;
+    margin-left: 1rem;
+    background: transparent;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+  }
+
+  div#info > * {
+    margin-bottom: 3rem;
+  }
+  
+  a,
+  a:visited {
+    color: var(--text-color);
+    
+  }
+  
+  

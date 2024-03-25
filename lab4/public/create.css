@@ -1,0 +1,163 @@
+h2 {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+fieldset {
+    border-radius: 8px;
+    border: 1px solid var(--light-color);
+    
+}
+
+button.secondary {
+    border: none;
+    height: 2rem;
+    width: 6rem;
+    background-color: var(--light-color);
+    color: black;
+    border-radius: 8px;
+    margin-right: 2rem;
+}
+
+button.secondary:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.title-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 0.25rem;
+    gap: 0.25rem;
+}
+
+.form-actions {
+    padding: 0 1rem;
+}
+
+#set-metadata {
+    position: relative;
+}
+
+#set-metadata h2{
+    position: absolute;
+    top: -2.9rem;
+}
+
+#card-metadata {
+    position: relative;
+}
+
+#card-metadata h2{
+    position: absolute;
+    top: -3rem;
+}
+
+#card-metadata svg{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 2rem;
+    top: -2.9rem;
+    stroke: black;
+}
+
+#set-metadata {
+    padding: 1rem;
+    margin: 1.5rem 3rem;
+}
+
+#card-metadata {
+    padding: 1rem;
+    margin: 3.5rem 3rem 0rem 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.hidden {
+    display: none;
+}
+
+#empty-placeholder {
+    display: flex;
+    width: 20rem;
+    height: 9rem;
+    border: 3px dashed var(--secondary-color);
+    border-radius: 10px;
+    background-color: var(--light-color);
+    text-align: center;
+    color: var(--secondary-color);
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.card-input-wrapper {
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin: 1rem 0;
+    align-self: flex-end;
+}
+
+.card-input-wrapper button {
+    border: none;
+    border-radius: 8px;
+    background-color: #7FC782;
+    color: white;
+    padding: 0.5rem 1.5rem;
+}
+
+.input-wrapper {
+    display: inline;
+}
+
+.input-wrapper input{
+    display: block;
+}
+
+input {
+    color: black;
+    border: none;
+    border-bottom: 2px solid var(--light-color);
+}
+
+input:focus {
+    border-bottom: 2px solid #7FC782;
+    outline: none;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+label {
+    color: transparent;
+}
+
+input:focus + label {
+    color: #7FC782;
+    font-size: 0.85rem;
+}
+
+dl div {
+    list-style-type: none;
+    width: 18rem;
+    height: 8rem;
+    margin: 1rem 2rem;
+    padding: 1rem;
+    background: var(--light-color);
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+}
+
+div dd {
+    margin: 0;
+}

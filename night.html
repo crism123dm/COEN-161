@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            a:hover[target="_blank"] {
+                color:orange !important;
+            }
+
+            a:hover[target="_blank"] {
+                color:purple;
+            }
+
+            .parent {
+                display: flex;
+                justify-content:space-between;
+            }
+
+            div {
+                background-color: #ccc;
+            }
+
+            div div {
+                background-color: #eee;
+                margin:3rem;
+                border:2px solid #eee;
+                border-color: black;
+                
+                
+                font-size: 25px;
+                width:30em;
+                padding:2em;
+            }
+
+            #b {
+                box-sizing: border-box;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <h1> What's up</h1>
+        <a href="http://youtube.com" target="_blank">
+            Youtube
+        </a>
+
+
+        <div class="parent">
+            <div id="a">How</div>
+            <div id="b">Why</div>
+        </div>
+    </body>
+</html>

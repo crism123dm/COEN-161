@@ -1,0 +1,156 @@
+
+header div.title-wrapper { /*section in header */
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header h1 { /*header*/
+    /*Create a new Flashcard Set */
+    font-family: Arial, Helvetica, sans-serif;
+}
+button.secondary { /* Create button */
+    border-radius: 0.2rem;
+    padding:0.5rem;
+    border:none;
+    background-color: #ccc;
+}
+
+form fieldset { /*any field set */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 2rem 2rem 3rem 2rem;
+    position:relative;
+    gap:1rem;
+}
+
+fieldset#card-metadata { /* Second form section */
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    border-top-right-radius: 0px;
+    align-items: flex-start;
+}
+form {  /*Holds both forms */
+    margin-top:2rem; 
+}
+fieldset h2 {  /* headers of forms */ 
+    /*Set information and Flashcard information*/
+    position: absolute;
+    top: -2.7rem; 
+    left: 0;
+    padding:0.5rem 1rem;
+    font-size: 0.8rem;
+    color: #ccc;
+}
+
+
+input[type=text] { /*text boxes */
+
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid grey;
+    border-radius: 0.1rem;
+    outline: none;
+    position: relative;
+    margin:0.5rem;
+}
+
+form fieldset#card-metadata div.card-input-wrapper { /* last two text boxes */
+    flex: 0 0 15rem;
+    display: flex;
+    flex-direction: column;
+    padding:1rem;
+
+    margin-left: auto;
+    margin-right:auto;
+}
+
+span.input-wrapper label { /*labels */
+    /*Set Name and Course */
+    position: relative;
+    font-size:0.6rem;
+    color: #ccc;
+    top:1.25rem;
+    right:9rem;
+
+}
+
+form fieldset label[for="upload-input"] { /*upload button*/
+    display:inline-block;
+    width:1.5rem;
+    height:1.5rem;
+    padding:0.5rem;
+    border-radius: 4px;
+    color: black;
+    position: absolute;
+
+    top: -2.5rem; 
+    right: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    
+}
+
+button#add-card-button { /*green Add card*/ 
+    width:15rem;
+    color: #eee;
+    font-size: 1rem;
+    padding:1rem;
+    text-align: center;   
+    background-color: green;
+    border-radius: 0.5rem;
+    border:none;
+    margin-top: 2rem;
+}
+dl > .card-input-wrapper, #empty-placeholder { /* grey box and bottom 2 text boxes */
+
+    width:20rem;
+    height:10rem;
+    background: #eee;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 1rem auto
+}
+
+#empty-placeholder { /* grey box */
+    /* Add a card and it'll show up here */
+    display: flex;
+    border: 4px dashed grey;
+    color: grey;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+form fieldset#card-metadata dl { /*section inside grey box */
+    /*Add a card and it'll show up here */
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+dl div#empty-placeholder { /* background for add a card here */
+ /*  padding:1rem;
+    background-color: #ccc;
+    width:300px;
+    margin:1rem;
+    border:2px dashed grey;
+    border-radius: 8 px;
+    font-size: 0.5rem;
+    color:grey;
+    display: flex;
+    justify-content: center;
+    flex-basis: 300px;
+    margin-top: 0 !important;
+    box-sizing: border-box;
+    */
+}
+
+
+input#upload-input { /*hides the choose file */
+    display: none;
+}

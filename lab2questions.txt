@@ -1,0 +1,8 @@
+lab 4 demo 
+
+
+setup nodejs
+node server.js -port 8000
+
+copy the ip address into browser
+http://10.16.8.18:8000/public/index.html

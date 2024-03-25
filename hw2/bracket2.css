@@ -1,0 +1,241 @@
+h3 {
+    color: #cc3300;
+    text-align: center;
+  }
+  
+  body {
+    font-family: arial;
+  }
+  .large-box-1, .large-box-2{
+    border: 1px solid black;
+    width: 50vw;
+    height: 90vh;
+    display: flex;
+  }
+  
+  .main-box{
+    display: flex;
+  }
+  
+  .columns-1 {
+    display: flex;
+  }
+  
+  .col-1 {
+    /*border: 1px solid black;*/
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .col-2, .col-3, .col-4 {
+    /*border: 1px solid black;*/
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  
+  .col-5{
+    /*border: 1px solid black;*/
+    width: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  
+  
+  .col-1-boxes {
+    border: 1px solid #cc3300;
+    width: 13vw;
+    height: 13vh;
+    border-radius: 2px;
+  }
+  
+  .col-2-boxes {
+    border: 1px solid black;
+    width: 10vw;
+    height: 8vh;
+  }
+  
+  .col-3-boxes {
+    border: 1px solid black;
+    width: 10vw;
+    height: 22vh;
+  }
+  
+  .col-4-boxes {
+    border: 1px solid black;
+    width: 10vw;
+    height: 45vh;
+  }
+  
+  .col-5-boxes {
+    border: 1px solid black;
+    width: 5vw;
+    height: 45vh;
+  }
+  
+  /*REMOVE EXTRA SIDE LINES*/
+  
+  div.col-2.left .col-2-boxes,
+  div.col-3.left .col-3-boxes,
+  div.col-4.left .col-4-boxes,
+  div.col-5.left .col-5-boxes
+  {
+    border-left: none;
+  }
+  
+  
+  div.col-2.right .col-2-boxes,
+  div.col-3.right .col-3-boxes,
+  div.col-4.right .col-4-boxes,
+  div.col-5.right .col-5-boxes
+  {
+    border-right: none;
+  }
+  
+  div.col-5.left .col-5-boxes,
+  div.col-5.right .col-5-boxes {
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+  }
+  
+  .large-box-1,
+  .large-box-2 {
+    border: none;
+  }
+  
+  /*ADD DETAILS IN BOXES*/
+  
+  
+  .col-1.left p {
+    font-size: 0.8rem;
+    position: relative;
+    /*bottom: 2rem;*/
+    margin-bottom: 0.2rem; /*added this later*/
+  
+  }
+  
+  .group-1,
+  .group-2 {
+    position: relative;
+    bottom: 2rem;
+  }
+  
+  .group-1 p:first-child,
+  .group-2 p:first-child {
+    color: #ababab;
+    text-transform: uppercase;
+  }
+  
+  
+  .col-1.right p {
+    font-size: 0.8rem;
+    position: relative;
+    /*bottom: 2rem;*/
+    margin-bottom: 0.2rem; /*added this later*/
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  
+  .col-1.right p {
+    font-size: 0.8rem;
+    position: relative;
+    /*bottom: 2rem;*/
+  }
+  
+  .col-1.left .col-1-boxes {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  /*Aligns left group names to the left*/
+  .col-1.right .col-1-boxes {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .col-2.right .col-2-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .col-2.left p.top {
+    font-size: 0.8rem;
+    position: relative;
+    bottom: 2rem;
+  }
+  
+  .col-2.left p.bottom {
+    font-size: 0.8rem;
+    position: relative;
+    top: 0.9rem;
+  }
+  
+  .col-2.right p.top {
+    font-size: 0.8rem;
+    position: relative;
+    bottom: 2rem;
+  }
+  
+  .col-2.right p.bottom {
+    font-size: 0.8rem;
+    position: relative;
+    /*top: 2.2rem;*/
+  }
+  
+  /*Countries inside of col 1 boxes*/
+  
+  /*
+  .group-1 {
+    border: 2px solid blue;
+    width: 15vw;
+    height: 15vh;
+  
+  }
+  */
+  .matrix-1 {
+    /*border: 3px solid pink;*/
+    width: 12vw;
+    height: 13vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .matrix-row-1,
+  .matrix-row-2 {
+    /*border: 1px solid green;*/
+    width: 12vw;
+    height: 6.5vh;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .matrix-child {
+    /*border: 1px solid purple;*/
+    width: 6vw;
+    height: 6.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .matrix-1 img {
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  .matrix-1 p {
+    margin-top: 0px;
+  
+  }
+  
